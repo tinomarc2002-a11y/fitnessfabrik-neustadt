@@ -1,6 +1,4 @@
-*.bak
 bilder/
+*.bak
 3 Etagen Grafik.png
-
-.vercel
-.env*
+.claude/
