@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Platzhalter Etage 03, Solarium und Duschen">
+  <defs>
+    <pattern id="dots03" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="3.6" fill="#F2EEE9" fill-opacity=".085"/>
+    </pattern>
+    <g id="rays03">
+      <polygon points="690,500 570.5,460.6 570.5,539.4"/>
+      <polygon points="605.1,705.1 548.4,592.7 492.7,648.4"/>
+      <polygon points="400,790 439.4,670.5 360.6,670.5"/>
+      <polygon points="194.9,705.1 307.3,648.4 251.6,592.7"/>
+      <polygon points="110,500 229.5,539.4 229.5,460.6"/>
+      <polygon points="194.9,294.9 251.6,407.3 307.3,351.6"/>
+      <polygon points="400,210 360.6,329.5 439.4,329.5"/>
+      <polygon points="605.1,294.9 492.7,351.6 548.4,407.3"/>
+    </g>
+    <filter id="grain03" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="#171412"/>
+  <rect width="800" height="1000" fill="url(#dots03)"/>
+
+  <circle cx="400" cy="500" r="286" fill="#B04A37" fill-opacity=".2"/>
+  <circle cx="400" cy="500" r="286" fill="none" stroke="#B04A37" stroke-width="8" stroke-opacity=".7"/>
+
+  <!-- Sonne mit Farbversatz -->
+  <use href="#rays03" transform="translate(18,18)" fill="#B04A37"/>
+  <circle cx="418" cy="518" r="162" fill="#B04A37"/>
+  <use href="#rays03" fill="#F2EEE9" stroke="#0E0D0C" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="400" cy="500" r="162" fill="#B04A37" stroke="#0E0D0C" stroke-width="14"/>
+
+  <!-- Glanzpunkte -->
+  <g fill="#F2EEE9" fill-opacity=".5">
+    <circle cx="352" cy="446" r="16"/>
+    <circle cx="398" cy="418" r="9"/>
+  </g>
+
+  <rect x="0" y="946" width="230" height="10" fill="#B04A37"/>
+  <text x="740" y="920" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="20"
+        font-weight="600" letter-spacing="4" fill="#F2EEE9" fill-opacity=".3">PLATZHALTER</text>
+
+  <rect width="800" height="1000" filter="url(#grain03)" opacity=".06"/>
+</svg>

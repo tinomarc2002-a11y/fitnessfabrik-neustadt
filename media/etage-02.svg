@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Platzhalter Etage 02, Zirkel und Cardio">
+  <defs>
+    <pattern id="dots02" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="3.6" fill="#F2EEE9" fill-opacity=".085"/>
+    </pattern>
+    <g id="sw02">
+      <rect x="352" y="276" width="96" height="30" rx="10"/>
+      <rect x="370" y="300" width="60" height="56" rx="8"/>
+      <circle cx="400" cy="540" r="192"/>
+    </g>
+    <filter id="grain02" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="#171412"/>
+  <rect width="800" height="1000" fill="url(#dots02)"/>
+
+  <circle cx="400" cy="500" r="286" fill="#B04A37" fill-opacity=".2"/>
+  <circle cx="400" cy="500" r="286" fill="none" stroke="#B04A37" stroke-width="8" stroke-opacity=".7"/>
+
+  <!-- Stoppuhr mit Farbversatz -->
+  <use href="#sw02" transform="translate(18,18)" fill="#B04A37"/>
+  <use href="#sw02" fill="#F2EEE9" stroke="#0E0D0C" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- Zifferblatt -->
+  <g stroke="#0E0D0C" stroke-width="12" stroke-linecap="round">
+    <line x1="400" y1="378" x2="400" y2="410"/>
+    <line x1="562" y1="540" x2="530" y2="540"/>
+    <line x1="400" y1="702" x2="400" y2="670"/>
+    <line x1="238" y1="540" x2="270" y2="540"/>
+  </g>
+  <!-- Zeiger -->
+  <g stroke="#B04A37" stroke-width="18" stroke-linecap="round">
+    <line x1="400" y1="540" x2="400" y2="418"/>
+    <line x1="400" y1="540" x2="492" y2="596"/>
+  </g>
+  <circle cx="400" cy="540" r="18" fill="#0E0D0C"/>
+
+  <!-- Bewegungsbogen -->
+  <path d="M150 440 A 260 260 0 0 1 300 246" fill="none" stroke="#F2EEE9" stroke-opacity=".42"
+        stroke-width="11" stroke-linecap="round"/>
+  <path d="M650 640 A 260 260 0 0 1 500 834" fill="none" stroke="#F2EEE9" stroke-opacity=".42"
+        stroke-width="11" stroke-linecap="round"/>
+
+  <rect x="0" y="946" width="230" height="10" fill="#B04A37"/>
+  <text x="740" y="920" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="20"
+        font-weight="600" letter-spacing="4" fill="#F2EEE9" fill-opacity=".3">PLATZHALTER</text>
+
+  <rect width="800" height="1000" filter="url(#grain02)" opacity=".06"/>
+</svg>
